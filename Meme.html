@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Make a Meme</title>
+</head>
+<body>
+    <h1>Meme generator</h1>
+    <form action="#">
+        <label for="img-input">Insert image URL</label>
+        <input type="text" id="img-input" placeholder="paste copied image address here"> <br>
+        <label for="top-text-input">Top Line of Text</label>
+        <input type="text" id="top-text-input" placeholder="enter top text for meme"> <br>
+        <label for="bottom-text-input">Bottom Line of Text</label>
+        <input type="text" id="bottom-text-input" placeholder="enter bottom text for meme"> <br>  
+        <button id="submit" type="submit">Make your meme</button>
+        <label for="range">Adjust font-size</label>
+        <input type="range" id="range" min="24" max="36">
+    </form>
+    <div id="meme-output">
+    </div> 
+    <script src="app.js"></script>
+</body> 
+</html>

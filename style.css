@@ -1,0 +1,132 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
+/* basic */
+ 
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #1261A0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* header */
+
+h1{
+    margin: 0;
+    padding: 1vh;
+    text-align: center;
+    background-color: #072f5f;
+    color: #58cced;
+    font-family: 'Orbitron', sans-serif;
+    width: 100vw;
+}
+
+/* form styling */ 
+
+form{
+    font-family: 'Orbitron', sans-serif;
+    margin: 2vh;
+    color: #072f5f;
+    background-color: #58cced;
+    border: 3px solid #072f5f;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35vw;
+    text-align: center;
+}
+form button{
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bolder;
+    background-color: #072f5f;
+    color: #58cced;
+    border: solid 2px #000;
+    border-radius: 10px;
+}
+form input{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 550;
+    border: solid 2px #000;
+    border-radius: 10px;
+    padding: 2px 8px;
+    margin-top: 4px;
+}
+
+
+/* Meme styling */
+
+h3{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    font-weight: 100;
+    font-size: 26px;
+    text-align: center ;
+    text-shadow:
+    -2px 2px 0 #000,
+    2px 2px 0 #000,
+    2px -2px 0 #000,
+    -2px -2px 0 #000; 
+}
+
+#meme-output{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+}
+
+
+#meme-output > div{
+    margin: 15px 15px;
+    position: relative;
+    text-align: center;
+    max-width: 400px;
+    border: 2px solid black;
+}
+
+#meme-img{
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+#top-text{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top:5px;      
+}
+#bottom-text{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: -5px;  
+    flex-wrap: wrap;
+}
+
+#delete{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+    color: rgba(207, 207, 207, 0);
+    position: absolute;
+    font-size: 50px;
+    z-index: 1;
+}
+
+#delete:hover{
+
+    background-color: rgba(0, 0, 0, 0.157);
+    color: rgb(143, 0, 0);
+    font-weight: 900;
+}
